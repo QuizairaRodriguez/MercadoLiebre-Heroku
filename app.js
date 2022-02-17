@@ -5,7 +5,7 @@ const path = require('path');
 const pathPublic = path.resolve(__dirname,'public');
 app.use( express.static( pathPublic ) );
 
-app.listen( 3000, () => {
+app.listen( process.env.PORT || 3000 , function() {
     console.log('Servidor funcionando');
 });
 
