@@ -1,0 +1,401 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Header*/
+header{
+    background-color:#EAC926;
+}
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 5% 0% 5%;
+}
+
+.logo{
+    width: 50%;
+    padding: 0px 2px;
+    align-self: center;
+}
+
+.logo a img{
+    cursor: pointer;
+} 
+
+.burger-menu{
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.burger-menu i{
+    background-color:#1259c3;
+    color: white;
+    border-radius: 7px;
+    font-size: 15px;
+    height: 2em;
+    padding: 7px;
+    width: 2em;
+    cursor:pointer;
+}
+
+.navegacion{
+    display: none;
+    padding: 2%;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 55%;
+}
+
+li i{
+    width: 1em;
+}
+
+.barranavegacion{
+    width: 40%;
+}
+
+.buscar i{
+    color: #666; 
+    background-color: white;
+    font-size: 15px;
+    padding: 12px 0px;
+    margin: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.busqueda .buscar{
+    border: none;
+    border-radius: 5px;
+}
+
+.barra{
+    background-color:white;
+    font-size: 11px;
+    color: #666;
+    padding: 13px 3px;
+    font-weight: 100;
+    margin: 0px;
+    border-radius: 5px;
+    width: 90%;
+    height: 100%;
+    align-self: center;
+    border: none;
+}
+
+.busqueda{
+    display: flex;
+    font-size: 11px;
+    width: 50%;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.cuotas{
+    text-align: center;
+    width: 100%;
+    align-self: center;
+    margin: 20px 0px;
+}
+
+.point img{
+    width: 100vw;
+}
+
+/*Main*/
+main{
+    width: 90%;
+    margin: 0px auto 0px auto;
+    line-height: 0px;
+}
+
+.formulario-registro{
+    line-height: 30px;
+    margin: 20px auto;
+    background-color: white;
+    width: 80%;
+    border-radius: 5px;
+    border: solid 1px #666;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.formulario-registro h3{
+    font-size: 20px;
+    color: #666;
+    border-bottom: solid 1px #666;
+}
+
+.formulario-registro i{
+    display: block;
+    padding: 10px;
+    color: #1259c3;
+    font-size: 42px;
+    text-align: center;
+}
+
+.formulario-registro i:hover{
+    color: #0022AA;
+    cursor: pointer;
+}
+
+.formulario-registro input{
+    border: solid 1px #ebebeb;
+    border-radius: 5px;
+    height: 25px;
+    padding: 0px 5px;
+    width: 95%;
+    margin: 0px 5px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 16px;
+    margin:0px;
+}
+
+.formulario-registro .opciones input{
+    width: 8%;
+    display: flex;
+}
+
+.formulario-registro .secciones{
+    margin: 0px auto;
+}
+
+.opciones{
+    display: flex;
+    font-weight: normal;
+    font-size: 13px;
+    align-self: center;
+}
+
+.botones{
+    display: inline-flex;
+    justify-content: center;
+    width: 95%;
+}
+
+.botones .enviar{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: #1259c3;
+}
+
+.botones .enviar:hover{
+    background-color: #0022AA;
+    cursor: pointer;
+}
+
+/*Footer*/
+footer{
+    background-color: white;
+    margin: 0px 5px 0px 5px;
+}
+
+.derechos{
+    color: #666;
+    padding: 40px 0px 25px 20px;
+    margin: 0px 5px 5px 5px;
+}
+
+.aclaraciones{
+    text-align: center;
+    width: 100%;
+    padding: 40px 50px 0px 50px;
+    margin: 5px 0px;
+    display: inline-block;
+}
+
+.aclaraciones p{
+    margin: 0px 0px 0px 0px;
+    color: #666;
+    text-align: center;
+}
+
+.aclaraciones h3{
+    margin: 10px 0px 0px 0px;
+    color: #666;
+}
+
+.aclaraciones i{
+    color: #1259c3;
+    font-size: 2em;
+}
+
+.aclaraciones i:hover{
+    color: #0022AA;
+}
+
+/*Media Queries*/
+@media (min-width: 361px){
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .logo{
+        width: 45%;
+    }
+
+    .descripciones{
+        width: 100%;
+    }
+
+    .navegacion{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .burger-menu{
+        display:none;
+    }
+
+    .precios, .descuentos{
+        width: 50%;
+    }
+
+    main section article{
+        width: 48%;
+    }
+
+    .principal{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 2% 2% 0% 2%;
+    }
+
+    .cuotas{
+        font-size: 7px;
+        padding: 0px;
+        width: 66%;
+    }
+
+    .barra{
+        font-size: 7px;
+        padding: 3px 3px;
+        font-weight: 100;
+        margin: 0px;
+        border-radius: 5px;
+    }
+
+    .buscar i {
+        font-size: 10px;
+        padding: 3px 2px;
+        margin: 0px 1px;
+    }
+
+    .busqueda{
+        margin: 0px 1px;
+    }
+}
+
+@media (min-width: 461px){
+    .logo{
+        width: 40%;
+    }
+
+    .cuotas{
+        font-size: 8px;
+        width: 50%;
+    }
+
+    .barra{
+        font-size: 9px;
+    }
+
+    .buscar i {
+        font-size: 10px;
+        padding: 4px 2px;
+    } 
+
+    .barranavegacion li a{
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 600px){
+    .cuotas{
+        font-size: 10px;
+        width: 47%;
+    }
+
+    .barra{
+        font-size: 11px;
+    }
+
+    .barranavegacion li a{
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 769px){
+    main section article{
+        width: 23%;
+    }
+
+    .cuotas{
+        width: 30%;
+        text-align: right;
+    }
+
+    .barra{
+        font-size: 12px;
+    }
+
+    .buscar i{
+        padding: 5px;
+        font-size: 12px;
+    }  
+
+    .barranavegacion li a{
+        font-size: 13px;
+    }
+
+    .busqueda{
+        width: 49%;
+        justify-content: space-around;
+    }
+
+    .footer-principal{
+        display: flex;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .logo a img{
+        width: 220px;
+    }
+}
